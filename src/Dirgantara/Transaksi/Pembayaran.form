@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Dirgantara.Transaksi.Pembayaran">
+  <grid id="27dc6" binding="pembayaran" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1501" height="621"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="64203" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-12533556"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <grid id="373ae" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-1"/>
+              <preferredSize width="241" height="300"/>
+            </properties>
+            <border type="line"/>
+            <children>
+              <component id="73d1a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="20"/>
+                  <text value="Reservasi Tiket Pesawat"/>
+                </properties>
+              </component>
+              <component id="69479" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="Logo2.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <vspacer id="f4818">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="48df5">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <grid id="f461c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="22298" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <icon value="user.png"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="f8163" class="javax.swing.JLabel" binding="label_user">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="16"/>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="8bf6a" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="38ff1" class="javax.swing.JButton" binding="dashboardButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <text value="Dashboard"/>
+                </properties>
+              </component>
+              <component id="cbda0" class="javax.swing.JButton" binding="btnPembatalan">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <text value="Pembatalan"/>
+                </properties>
+              </component>
+              <component id="1b60f" class="javax.swing.JButton" binding="logoutButton" default-binding="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <text value="Logout"/>
+                </properties>
+              </component>
+              <component id="22b73" class="javax.swing.JButton" binding="btnPemesanan">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <text value="Pemesanan"/>
+                </properties>
+              </component>
+              <component id="9c238" class="javax.swing.JButton" binding="riwayatButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <text value="Riwayat"/>
+                </properties>
+              </component>
+              <component id="601ae" class="javax.swing.JButton" binding="btnPembayaran">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <text value="Pembayaran"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="55ce4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-12533556"/>
+              <preferredSize width="24" height="500"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+      <grid id="a09df" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="8bfa1" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="a5974" layout-manager="GridLayoutManager" row-count="9" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12533556"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e5cf3" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Berlin Sans FB Demi" size="28" style="1"/>
+                      <text value="Pembayaran"/>
+                    </properties>
+                  </component>
+                  <grid id="80339" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="e9878" layout-manager="GridLayoutManager" row-count="11" column-count="21" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <opaque value="false"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="2c4f2" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Id Pemesanan"/>
+                            </properties>
+                          </component>
+                          <vspacer id="ef0">
+                            <constraints>
+                              <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="3ce35" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Tanggal Pemesanan"/>
+                            </properties>
+                          </component>
+                          <component id="d39bb" class="javax.swing.JTextField" binding="txttglPesan">
+                            <constraints>
+                              <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="8ec36" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Tanggal Pembayaran"/>
+                            </properties>
+                          </component>
+                          <component id="ae1bc" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Tanggal Booking"/>
+                            </properties>
+                          </component>
+                          <component id="6f3e8" class="javax.swing.JTextField" binding="txtBook">
+                            <constraints>
+                              <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="6a864" class="javax.swing.JComboBox" binding="cbIdpemesanan">
+                            <constraints>
+                              <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <model/>
+                            </properties>
+                          </component>
+                          <component id="7b581" class="javax.swing.JTextField" binding="txttglbayar">
+                            <constraints>
+                              <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                            </properties>
+                          </component>
+                          <component id="630a1" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Nama Penumpang"/>
+                            </properties>
+                          </component>
+                          <component id="4a633" class="javax.swing.JTextField" binding="txtnama">
+                            <constraints>
+                              <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                            </properties>
+                          </component>
+                          <component id="c24c0" class="javax.swing.JTextField" binding="txtrute">
+                            <constraints>
+                              <grid row="1" column="10" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                            </properties>
+                          </component>
+                          <component id="3937c" class="javax.swing.JTextField" binding="txtjumlah">
+                            <constraints>
+                              <grid row="3" column="10" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                            </properties>
+                          </component>
+                          <component id="1781a" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Rute"/>
+                            </properties>
+                          </component>
+                          <component id="a4bef" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Jumlah"/>
+                            </properties>
+                          </component>
+                          <component id="9dd43" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="5" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Total Harga"/>
+                            </properties>
+                          </component>
+                          <component id="f8f89" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="7" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Metode Pembayaran :"/>
+                            </properties>
+                          </component>
+                          <component id="6f377" class="javax.swing.JTextField" binding="txttotal">
+                            <constraints>
+                              <grid row="5" column="10" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                            </properties>
+                          </component>
+                          <component id="bd615" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="81aa0" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="23430" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="efc28" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="6ed31" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="375c4" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="5" column="20" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="a8dfa" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="5" column="19" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="a790b" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="5" column="18" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="39f18" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="5" column="17" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="bb14d" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="5" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <hspacer id="e32ea">
+                            <constraints>
+                              <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="68f09" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="2df0e" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="d052e" class="javax.swing.JButton" binding="lanjutKePembayaranButton" default-binding="true">
+                            <constraints>
+                              <grid row="9" column="9" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                              <text value="Lanjut Ke Pembayaran"/>
+                            </properties>
+                          </component>
+                          <component id="4ef99" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="2" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="3b70b" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="4" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="48b3" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="6" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="9ec0f" class="javax.swing.JToolBar$Separator">
+                            <constraints>
+                              <grid row="8" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="636e3" class="javax.swing.JRadioButton" binding="virtualAccountRadioButton" default-binding="true">
+                            <constraints>
+                              <grid row="7" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="14"/>
+                              <opaque value="false"/>
+                              <text value="Virtual Account"/>
+                            </properties>
+                          </component>
+                          <hspacer id="d6add">
+                            <constraints>
+                              <grid row="9" column="16" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="d863b" class="javax.swing.JComboBox" binding="cbPemilihan">
+                            <constraints>
+                              <grid row="7" column="13" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="16"/>
+                            </properties>
+                          </component>
+                          <component id="f51ff" class="javax.swing.JRadioButton" binding="geraiRetailRadioButton" default-binding="true">
+                            <constraints>
+                              <grid row="7" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="14"/>
+                              <opaque value="false"/>
+                              <text value="Gerai Retail"/>
+                            </properties>
+                          </component>
+                          <component id="3d43f" class="javax.swing.JRadioButton" binding="cbCash">
+                            <constraints>
+                              <grid row="8" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font size="14"/>
+                              <opaque value="false"/>
+                              <text value="Pembayaran Langsung"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="37021" class="javax.swing.JToolBar$Separator">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="d48ae" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="4299b" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="2f668" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="dac2e" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="a7aab" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="92c72" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="7b2af" class="javax.swing.JToolBar$Separator">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

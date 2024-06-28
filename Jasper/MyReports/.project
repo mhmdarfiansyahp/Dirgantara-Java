@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MyReports</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>net.sf.jasperreports.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>net.sf.jasperreports.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>E_TiketOnline.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/arfan/OneDrive/Documents/Kampus/Semester 2/PRG 3 Java/Minggu Ke -14/jasper/MyReports/E_TiketOnline.jrxml</location>
+		</link>
+		<link>
+			<name>Laporan_Pengadaan.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/arfan/Downloads/Project-PRG3-Supermarket-03/Project-PRG3-Supermarket-03/Jasper/MyReports/Laporan_Pengadaan.jrxml</location>
+		</link>
+		<link>
+			<name>Laporan_Pengembalian.jasper</name>
+			<type>1</type>
+			<location>C:/Users/arfan/Downloads/Project-PRG3-Supermarket-03/Project-PRG3-Supermarket-03/Jasper/MyReports/Laporan_Pengembalian.jasper</location>
+		</link>
+		<link>
+			<name>Laporan_Pengembalian_1.jasper</name>
+			<type>1</type>
+			<location>C:/Users/arfan/Downloads/Project-PRG3-Supermarket-03/Project-PRG3-Supermarket-03/Jasper/MyReports/Laporan_Pengembalian.jasper</location>
+		</link>
+		<link>
+			<name>Laporan_Penjualan.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/arfan/Downloads/Project-PRG3-Supermarket-03/Project-PRG3-Supermarket-03/Jasper/MyReports/Laporan_Penjualan.jrxml</location>
+		</link>
+		<link>
+			<name>Struk_Belanja.jrxml</name>
+			<type>1</type>
+			<location>C:/Users/arfan/Downloads/Project-PRG3-Supermarket-03/Project-PRG3-Supermarket-03/Jasper/MyReports/Struk_Belanja.jrxml</location>
+		</link>
+	</linkedResources>
+</projectDescription>

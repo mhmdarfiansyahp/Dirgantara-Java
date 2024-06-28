@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Struk_Belanja" pageWidth="170" pageHeight="425" columnWidth="130" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d3eed09a-a140-4e3f-a8a8-282a374a20fb">
+	<parameter name="IdTransaksi" class="java.lang.String"/>
+	<parameter name="IdKaryawan" class="java.lang.String"/>
+	<parameter name="Kembalian" class="java.lang.Integer"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Metode_Pembayaran" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Nama Barang" class="java.lang.String"/>
+	<field name="Harga Jual" class="java.lang.Integer"/>
+	<field name="Qty" class="java.lang.String"/>
+	<field name="Total" class="java.lang.Integer"/>
+	<variable name="Total Penjualan" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{Total}]]></variableExpression>
+	</variable>
+	<pageHeader>
+		<band height="112" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="-11" y="68" width="50" height="28" uuid="a3d1ab2a-1bf3-4a97-880c-e7da042e0fe4"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No	: 
+Tanggal	: 
+Kasir	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="100" width="170" height="8" uuid="339f86cd-ac69-4cf2-90f5-0a2385b0551d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[===========================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="30" width="170" height="38" uuid="55a9339c-d250-44f0-a6e7-9a25d4a8cf37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AgorÀ Supermarket
+Jl. Tarum Baru II, No. B2-5,
+Central Cikarang, Bekasi
+West Java 17530
+===========================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="0" width="170" height="28" uuid="bb0222b9-2450-4226-9d66-275758d9139f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AgorÀ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="68" width="100" height="10" uuid="da61d44a-ef33-4b22-ae91-12f30cb5e5c6"/>
+				<textElement>
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IdTransaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="86" width="100" height="10" uuid="bd67c80a-228b-4e06-9db0-8c982f943cc1"/>
+				<textElement>
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IdKaryawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="77" width="100" height="10" uuid="7500b296-7779-490b-bc61-7617ec20cc9b"/>
+				<textElement>
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Kembalian}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="-11" y="0" width="123" height="10" uuid="1d1e3de6-99ad-4b56-ad9f-e2a3e8ffcb98"/>
+				<textElement>
+					<font fontName="Courier New" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama Barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-3" y="10" width="59" height="10" uuid="ea78f020-d6ee-463d-8b36-429dc0b6f8b1"/>
+				<textElement>
+					<font fontName="Courier New" size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{Harga Jual} != null) ? "@ Rp " + new java.text.DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(new java.util.Locale("id", "ID"))).format($F{Harga Jual}) : ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="10" width="30" height="10" uuid="880d28e3-6e3b-40b3-8f0a-18d10f063594"/>
+				<textElement>
+					<font fontName="Courier New" size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["x" +$F{Qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="10" width="46" height="10" uuid="cefe12b1-ad87-4822-a292-64dc97fc275d"/>
+				<textElement>
+					<font fontName="Courier New" size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{Total} != null) ? "Rp " + new java.text.DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(new java.util.Locale("id", "ID"))).format($F{Total}) : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-41" y="4" width="100" height="30" uuid="a1b5cc4b-a222-4db9-b4a8-323ecfc4c582"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="31" width="170" height="38" uuid="2060f2f2-276c-4e89-a08e-db2fa96c2423"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[===========================================
+Follow Us on Instagram
+@AgorÀ
+-- Thank You --
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="76" y="11" width="66" height="20" uuid="0361cca5-f78c-4b30-81ce-9878396d216d"/>
+				<textElement textAlignment="Center">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{Total Penjualan}!= null) ? "Total : Rp " + new java.text.DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(new java.util.Locale("id", "ID"))).format($V{Total Penjualan}) : ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-17" y="10" width="63" height="20" uuid="8722fd5f-c0de-4301-a5b1-8507137ae5b4"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{Kembalian}!= null) ? "Total : Rp " + new java.text.DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(new java.util.Locale("id", "ID"))).format($P{Kembalian}) : ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-11" y="56" width="50" height="13" uuid="1282454a-c3c5-4641-9689-6c148be2d035"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Metode_Pembayaran}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

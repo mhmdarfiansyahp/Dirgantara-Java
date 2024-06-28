@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Online" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="92ba1321-6ea9-4245-97fb-95670a203785">
+	<parameter name="IDPemesanan" class="java.lang.String"/>
+	<parameter name="TanggalKebrangkatan" class="java.lang.String"/>
+	<parameter name="tujuan" class="java.lang.String"/>
+	<parameter name="asal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nama_user" class="java.lang.String"/>
+	<field name="jumlah" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="270" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="5" width="100" height="30" uuid="35a39026-28e0-40f8-8625-645119f6776e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[E-ticket ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="15" y="55" width="130" height="110" uuid="f388f7eb-694d-4b3d-aaf5-352790d01c2b"/>
+				<imageExpression><![CDATA["C:/Users/arfan/OneDrive/Documents/Kampus/Semester 2/Project/Logo2.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="645" y="205" width="140" height="48" uuid="f14b4ce2-88fb-41f3-9cf5-560ad07783f0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Waktu Tertera adalah waktu bandara setempat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="195" width="128" height="67" uuid="7ecb691a-46e4-493f-b562-7b9974eeec99"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tunjukkan e - ticket dan identitas para penumpang saat check - in]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="35" width="100" height="15" uuid="0130393d-a02d-4ec8-af0b-44bd96e2ec25"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Departure  Flight]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="645" y="50" width="140" height="40" uuid="c385937d-6cf8-487c-ae2f-98f28aed7a49"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IDPemesanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="635" y="115" width="126" height="25" uuid="5d8b14b4-5072-4670-909d-fb2fa5e83a51"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TanggalKebrangkatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="116" width="70" height="22" uuid="0e6fcf42-850c-4e5d-84f7-34c4b297cb2d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{asal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="116" width="80" height="22" uuid="74525c9f-58f8-4831-b96e-21c0046d8dd0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{tujuan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="21" width="100" height="30" uuid="7862ce17-dfe0-4c15-a175-b5e9ad5df5ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="05836720-983b-433b-9538-a4ba12945fa9"/>
+				</reportElement>
+				<text><![CDATA[nama_user]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="520" y="22" width="100" height="30" uuid="8345c7bd-9468-4cb5-b514-b4059ffee1a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2e46dfa-835a-4b34-899e-4b16bec9cdf5"/>
+				</reportElement>
+				<text><![CDATA[jumlah]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="47" width="100" height="30" uuid="c51da0f2-30f3-4310-97ab-fdba3f4bac06">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="05836720-983b-433b-9538-a4ba12945fa9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nama_user}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="47" width="100" height="30" uuid="d927138b-e07b-4f00-9e2b-edc0ccdb26ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2e46dfa-835a-4b34-899e-4b16bec9cdf5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

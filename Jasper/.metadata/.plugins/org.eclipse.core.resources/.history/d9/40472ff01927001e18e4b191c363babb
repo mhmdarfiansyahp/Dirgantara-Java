@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Online" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="92ba1321-6ea9-4245-97fb-95670a203785">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="257" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="100" height="30" uuid="4049905f-376b-432a-b853-35fad9d89a44"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[E-ticket ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="50" width="130" height="110" uuid="188f7f67-e244-476b-8284-d9036a017f49"/>
+				<imageExpression><![CDATA["C:/Users/arfan/OneDrive/Documents/Kampus/Semester 2/Project/Logo2.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="640" y="200" width="140" height="48" uuid="01844b4a-45f7-447e-9ab8-2f57f1519d0e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Waktu Tertera adalah waktu bandara setempat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="190" width="128" height="67" uuid="814c80cd-9386-4291-8f47-41f91d9631ea"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tunjukkan e - ticket dan identitas para penumpang saat check - in]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="30" width="100" height="15" uuid="f76bae59-1982-43fc-a9ff-d091a0ca9d84"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Departure  Flight]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="640" y="45" width="140" height="40" uuid="bcc25184-0668-4a59-a0f8-0de8f3ec3bcd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IDPemesanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="110" width="126" height="25" uuid="37bb044b-5c1e-4c14-bb30-6f9c57f8f1a5"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TanggalKebrangkatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="111" width="70" height="22" uuid="b6f3f592-5205-4a97-a5ff-760d931be9eb"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{asal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="111" width="80" height="22" uuid="bfa0c42d-b22b-4fa8-853d-ace74e769ee4"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{tujuan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporanPembelian" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74d74811-0a2f-478a-99a7-768eee3851f5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Tanggal" class="java.lang.String"/>
+	<parameter name="Bulan" class="java.lang.Integer"/>
+	<parameter name="Tahun" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id_pemesanan" class="java.lang.String"/>
+	<field name="tanggal_pemesanan" class="java.lang.String"/>
+	<field name="tanggal_pembayaran" class="java.lang.String"/>
+	<field name="jumlah" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="161" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="5" width="595" height="25" uuid="25f290f8-783e-48f4-a9a8-4861d2e26c8f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIRGANTARA FLIGHT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="30" width="258" height="30" uuid="bf1b01c0-98da-41da-9acd-46916f1786a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Laporan Pembelian Tiket]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="100" width="559" height="1" uuid="e6292973-9b05-4b7a-96d1-2c44b3a23640"/>
+			</line>
+			<image>
+				<reportElement x="20" y="5" width="70" height="60" uuid="0d3100ba-dec3-40cc-b0a3-60d357977ae2"/>
+				<imageExpression><![CDATA["C:/Users/arfan/OneDrive/Documents/Kampus/Semester 2/Project/Logo7.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="110" width="90" height="30" uuid="d2be3388-b185-425b-8149-bfa0715c4bc9"/>
+				<text><![CDATA[No. Laporan : PGD/]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="430" y="110" width="100" height="30" uuid="af6c5e40-ce4b-4abd-ac71-802cee78e5c0"/>
+				<textFieldExpression><![CDATA[$P{Tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="110" width="130" height="30" uuid="208fccf6-3272-42a1-9db5-1eb3a3013eda"/>
+				<textFieldExpression><![CDATA[$P{Bulan} + "/" + $P{Tahun}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="20" width="80" height="24" uuid="50480ab7-91a3-4b9f-8204-a51c9d916beb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="630cbf15-f9da-4680-af82-da0b8ab4e031"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID Pemesan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="20" width="100" height="24" uuid="39d94d0e-d4b6-481e-acbb-54b88ace7b59">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c8a38346-7d36-4a1c-bdf6-22f175f04d9c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tanggal Pemesanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="20" width="100" height="24" uuid="f3fb2a19-c4a7-4ccd-863e-3c7f882f6301">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ccfb5d42-150b-4816-a50b-fb7a21e3e425"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tanggal Pembayaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="20" width="100" height="24" uuid="44ec053c-4ed2-4e1f-b09e-77c0dad60b80">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a614e08-962f-466a-a839-4ba742c4a86c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jumlah Penumpang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="20" width="100" height="24" uuid="06826cc9-7dae-477d-ad26-73ea061ab218">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9935760b-567d-4af9-990e-8e84226aadb8"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Total Harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="0" width="80" height="20" uuid="5cbd73f9-0aac-4188-bfd1-1c3d78722ad2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="630cbf15-f9da-4680-af82-da0b8ab4e031"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_pemesanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="100" height="20" uuid="8059314e-8dd5-466b-b149-6704c4d9e8f8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c8a38346-7d36-4a1c-bdf6-22f175f04d9c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tanggal_pemesanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="100" height="20" uuid="933e98a8-7ae5-4595-9da0-5bfffbe7abe8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ccfb5d42-150b-4816-a50b-fb7a21e3e425"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[$F{tanggal_pembayaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="100" height="20" uuid="3904b61d-f164-4233-af4e-6a559e5b1c8e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a614e08-962f-466a-a839-4ba742c4a86c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="100" height="20" uuid="591937f6-a667-4fdc-bf5f-32297c6614b2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9935760b-567d-4af9-990e-8e84226aadb8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="26" splitType="Stretch"/>
+	</summary>
+</jasperReport>
